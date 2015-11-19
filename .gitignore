@@ -7,6 +7,9 @@
 # Not this file though
 !.gitignore
 
+# Include the readme too
+!README.md
+
 # --- GIT -------------------------------------------------------------------- #
 
 # configs
