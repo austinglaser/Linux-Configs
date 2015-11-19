@@ -1,12 +1,20 @@
-# Default to ignoring everything; we'll add specific rules for things we want
-# to include
+# --- DEFAULTS --------------------------------------------------------------- #
+
+# Ignore everything not explicitly specified
 *
 .*
 
-# -- Don't ignore this file --
+# Not this file though
 !.gitignore
 
-# --  vim configuration --
+# --- GIT -------------------------------------------------------------------- #
+
+# configs
+!.gitignore_master
+
+# --- VIM -------------------------------------------------------------------- #
+
+# Configs
 !.vim*
 !.vim/**/
 !.vim/**/*
@@ -16,5 +24,15 @@
 
 # vim plugins sometimes don't have good gitignores, so they show as dirty. We
 # can ignore them because .vimrc + vundle will re-clone
+# TODO: Think about making Vundle a submodule
 .vim/bundle/*
 !.vim/bundle/Vundle.vim
+
+# --- BASH ------------------------------------------------------------------- #
+
+# configs
+!.bash*
+!.git_svn_bash_prompt
+
+# Don't include history
+.bash_history
