@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/austin/git/lifeloc/system/drivers'
+let g:netrw_dirhist_2='/home/austin/Downloads/ChibiOS-Contrib/testhal/STM32/STM32F0xx/onewire'
+let g:netrw_dirhist_3='/home/austin/.ssh'
+let g:netrw_dirhist_4='/home/austin/git/ge/gumstix/ubuntu-with-sergio-omap4iss/drivers/media/video/omap4iss'
+let g:netrw_dirhist_5='/home/austin/git/personal/school/2015_fall/dev-methods/project/sensor/chibios/os/rt'
+let g:netrw_dirhist_6='/home/austin/git/ge/gumstix/linux/arch/arm/mach-omap2'
+let g:netrw_dirhist_7='/home/austin/git/ge/gumstix/ubuntu-with-sergio-omap4iss/drivers/media/video/omap4iss'

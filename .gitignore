@@ -1,6 +1,20 @@
-# Default to ignoring everything; we'll add specific rules for things we want to include
+# Default to ignoring everything; we'll add specific rules for things we want
+# to include
 *
 .*
 
-# Don't ignore this file
+# -- Don't ignore this file --
 !.gitignore
+
+# --  vim configuration --
+!.vim*
+!.vim/**/
+!.vim/**/*
+
+# viminfo is a dynamic file
+.viminfo
+
+# vim plugins sometimes don't have good gitignores, so they show as dirty. We
+# can ignore them because .vimrc + vundle will re-clone
+.vim/bundle/*
+!.vim/bundle/Vundle.vim
