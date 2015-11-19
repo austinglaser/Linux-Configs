@@ -1,0 +1,6 @@
+# Default to ignoring everything; we'll add specific rules for things we want to include
+*
+.*
+
+# Don't ignore this file
+!.gitignore
