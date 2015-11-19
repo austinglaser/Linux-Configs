@@ -4,10 +4,8 @@
 *
 .*
 
-# Not this file though
+# repository files
 !.gitignore
-
-# Include the readme too
 !README.md
 
 # --- GIT -------------------------------------------------------------------- #
