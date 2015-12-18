@@ -16,8 +16,8 @@
 /* --- PUBLIC DEPENDENCIES -------------------------------------------------- */
 
 // Standard
-#include <stdint.h>
 #include <stdbool.h>
+#include <stdint.h>
 
 /* --- PUBLIC CONSTANTS ----------------------------------------------------- */
 /* --- PUBLIC DATATYPES ----------------------------------------------------- */

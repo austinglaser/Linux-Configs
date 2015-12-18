@@ -13,8 +13,8 @@
 #include "%FILE%.h"
 
 // Standard
-#include <stdint.h>
 #include <stdbool.h>
+#include <stdint.h>
 
 /* --- PRIVATE CONSTANTS ---------------------------------------------------- */
 /* --- PRIVATE DATATYPES ---------------------------------------------------- */

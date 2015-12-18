@@ -10,8 +10,8 @@
 /* --- PRIVATE DEPENDENCIES ------------------------------------------------- */
 
 // Standard
-#include <stdint.h>
 #include <stdbool.h>
+#include <stdint.h>
 
 /* --- PRIVATE DATATYPES ---------------------------------------------------- */
 /* --- PRIVATE FUNCTION PROTOTYPES ------------------------------------------ */
