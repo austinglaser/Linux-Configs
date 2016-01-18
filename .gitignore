@@ -29,6 +29,9 @@
 .vim/bundle/*
 !.vim/bundle/Vundle.vim
 
+# A history file which changes rarely but probably shouldn't be versioned
+.vim/.netrwhist
+
 # --- BASH ------------------------------------------------------------------- #
 
 # configs
