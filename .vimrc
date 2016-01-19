@@ -75,9 +75,6 @@ autocmd FileType make setlocal tabstop=8
 autocmd FileType make setlocal softtabstop=8
 autocmd Filetype make setlocal shiftwidth=8
 
-"turn off expand tab for python
-autocmd FileType python setlocal noexpandtab
-
 "treat .ino and .pde files as .cpp (for arduino and zapuino)
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
 
