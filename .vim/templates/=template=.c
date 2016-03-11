@@ -1,7 +1,7 @@
 /**
  * @file    %FFILE%
  * @author  %USER% <%MAIL%>
- * @brief   %CAMELCLASS% %HERE% Source
+ * @brief   %CAMELCLASS% Source
  *
  * @addtogroup %MACROCLASS%
  * @{
@@ -9,10 +9,8 @@
 
 /* --- PRIVATE DEPENDENCIES ------------------------------------------------- */
 
-// This Module
 #include "%FILE%.h"
 
-// Standard
 #include <stdbool.h>
 #include <stdint.h>
 

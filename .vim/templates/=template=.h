@@ -1,7 +1,7 @@
 /**
  * @file    %FFILE%
  * @author  %USER% <%MAIL%>
- * @brief   %CAMELCLASS% %HERE% Interface
+ * @brief   %CAMELCLASS% Interface
  */
 
 #ifndef %GUARD%
@@ -15,7 +15,6 @@
 
 /* --- PUBLIC DEPENDENCIES -------------------------------------------------- */
 
-// Standard
 #include <stdbool.h>
 #include <stdint.h>
 
