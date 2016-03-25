@@ -9,3 +9,4 @@ alias open="xdg-open"
 
 #Decide if we really like this
 alias make="make -j8"
+alias bd=". bd -si"
