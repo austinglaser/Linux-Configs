@@ -13,7 +13,7 @@ AddTabularPattern!   space_after_comma /,\zs /l0l0l0
 AddTabularPattern!   space_after_first_comma /^[^,]*,\zs /l0l0l0
 AddTabularPattern!   space_after_scolon /\;\zs /l0l0l0
 AddTabularPattern!   space_after_first_scolon /^[^;]*\;\zs /l0l0l0
-AddTabularPattern!   latex_table /&\|\\\\
+AddTabularPattern!   latex_table /&\|\\\\\s*\\hline/
 
 " Restore old settings
 let &cpo = s:save_cpo
