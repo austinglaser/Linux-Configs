@@ -43,3 +43,6 @@
 
 # Don't include history
 .bash_history
+
+# Don't include path (from deep-thought)
+.bash_path
