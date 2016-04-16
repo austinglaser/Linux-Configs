@@ -2,10 +2,12 @@
 # %CAMELCLASS% makefile                                                        #
 #                                                                              #
 # This file provides:                                                          #
-# - %MACROCLASS%_INC    Directories to search for %CAMELCLASS% headers         #
-# - %MACROCLASS%_SRC    %CAMELCLASS% source files                              #
-# - %MACROCLASS%_ASM    %CAMELCLASS% assembly files                            #
-# - %MACROCLASS%_SRC    %CAMELCLASS% preprocessor definitions                  #
+# - %MACROCLASS%_INC           Directories to search for %CAMELCLASS% headers  #
+# - %MACROCLASS%_SRC           %CAMELCLASS% source files                       #
+# - %MACROCLASS%_ASM           %CAMELCLASS% assembly files                     #
+# - %MACROCLASS%_DEF           %CAMELCLASS% preprocessor definitions           #
+# - %MACROCLASS%_TEST          %CAMELCLASS% test directories                   #
+# - %MACROCLASS%_TESTSUPPORT   %CAMELCLASS% test support directories           #
 ################################################################################
 
 # --- DIRECTORIES ------------------------------------------------------------ #
@@ -18,16 +20,22 @@
 
 # --- HEADERS ---------------------------------------------------------------- #
 
-%MACROCLASS%_INC	:=
+%MACROCLASS%_INC		:=
 
 # --- SOURCES ---------------------------------------------------------------- #
 
-%MACROCLASS%_SRC	:=
+%MACROCLASS%_SRC		:=
 
 # --- ASSEMBLY --------------------------------------------------------------- #
 
-%MACROCLASS%_ASM	:=
+%MACROCLASS%_ASM		:=
 
 # --- DEFINITIONS ------------------------------------------------------------ #
 
-%MACROCLASS%_DEF	:=
+%MACROCLASS%_DEF		:=
+
+# --- TESTS ------------------------------------------------------------------ #
+
+%MACROCLASS%_TEST		:=
+
+%MACROCLASS%_TESTSUPPORT	:=
