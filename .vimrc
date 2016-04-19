@@ -71,9 +71,6 @@ hi SpecialKey ctermfg=8 guifg=gray
 autocmd FileType make setlocal noexpandtab
 autocmd FileType make setlocal listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
 autocmd FileType make setlocal list
-autocmd FileType make setlocal tabstop=8
-autocmd FileType make setlocal softtabstop=8
-autocmd Filetype make setlocal shiftwidth=8
 
 "treat .ino and .pde files as .cpp (for arduino and zapuino)
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
