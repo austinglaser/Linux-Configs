@@ -1,5 +1,4 @@
-/**
- * @file    %FFILE%
+/**@file    %FFILE%
  * @author  %USER% <%MAIL%>
  * @brief   %CAMELCLASS% Source
  *
