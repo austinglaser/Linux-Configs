@@ -7,6 +7,7 @@
 # - %MACROCLASS%_ASM           %CAMELCLASS% assembly files                     #
 # - %MACROCLASS%_DEF           %CAMELCLASS% preprocessor definitions           #
 # - %MACROCLASS%_TEST          %CAMELCLASS% test directories                   #
+# - %MACROCLASS%_TESTDEF       %CAMELCLASS% test defines                       #
 # - %MACROCLASS%_TESTSUPPORT   %CAMELCLASS% test support directories           #
 ################################################################################
 
@@ -37,5 +38,7 @@
 # --- TESTS ------------------------------------------------------------------ #
 
 %MACROCLASS%_TEST		:=
+
+%MACROCLASS%_TESTDEF		:=
 
 %MACROCLASS%_TESTSUPPORT	:=
