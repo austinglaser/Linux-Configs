@@ -7,7 +7,7 @@
 #define %GUARD%
 
 /**@defgroup %MACROCLASS% %CAMELCLASS%
- * @{ 
+ * @{
  *
  * @brief
  */
