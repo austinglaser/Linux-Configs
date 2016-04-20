@@ -11,6 +11,7 @@
 #include "%FILE%.h"
 
 #include <stdbool.h>
+#include <stddef.h>
 #include <stdint.h>
 
 /* --- PRIVATE CONSTANTS ---------------------------------------------------- */
