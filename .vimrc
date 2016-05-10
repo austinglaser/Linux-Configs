@@ -54,7 +54,7 @@ set autoindent
 set expandtab "Insert spaces, not a tabstop when I hit the tab key
 
 " list trailing whitespace
-set listchars=tab:\ \ ,trail:·
+set listchars=tab:>-,trail:.,extends:>,precedes:<
 set list
 
 "Align case: inside switch()
@@ -69,8 +69,6 @@ hi SpecialKey ctermfg=8 guifg=gray
 "sensitive and expect a tabstop, not a certain
 "number of spaces
 autocmd FileType make setlocal noexpandtab
-autocmd FileType make setlocal listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
-autocmd FileType make setlocal list
 
 "treat .ino and .pde files as .cpp (for arduino and zapuino)
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
