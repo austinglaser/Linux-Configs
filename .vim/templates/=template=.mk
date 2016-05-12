@@ -13,32 +13,28 @@
 
 # --- DIRECTORIES ------------------------------------------------------------ #
 
-# %CAMELCLASS% directory is the one this makefile resides in
-%MACROCLASS%_DIR	:= $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
-
-%MACROCLASS%_INC_DIR	:= $(%MACROCLASS%_DIR)/inc
-%MACROCLASS%_SRC_DIR	:= $(%MACROCLASS%_DIR)/src
+%MACROCLASS%_DIR := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 
 # --- HEADERS ---------------------------------------------------------------- #
 
-%MACROCLASS%_INC		:=
+%MACROCLASS%_INC :=
 
 # --- SOURCES ---------------------------------------------------------------- #
 
-%MACROCLASS%_SRC		:=
+%MACROCLASS%_SRC :=
 
 # --- ASSEMBLY --------------------------------------------------------------- #
 
-%MACROCLASS%_ASM		:=
+%MACROCLASS%_ASM :=
 
 # --- DEFINITIONS ------------------------------------------------------------ #
 
-%MACROCLASS%_DEF		:=
+%MACROCLASS%_DEF :=
 
 # --- TESTS ------------------------------------------------------------------ #
 
-%MACROCLASS%_TEST		:=
+%MACROCLASS%_TEST        :=
 
-%MACROCLASS%_TESTDEF		:=
+%MACROCLASS%_TESTDEF     :=
 
-%MACROCLASS%_TESTSUPPORT	:=
+%MACROCLASS%_TESTSUPPORT :=
