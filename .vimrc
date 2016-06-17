@@ -71,7 +71,7 @@ hi SpecialKey ctermfg=8 guifg=gray
 "This is because makefiles are 'whitespace'
 "sensitive and expect a tabstop, not a certain
 "number of spaces
-autocmd FileType make setlocal noexpandtab
+autocmd FileType make setlocal expandtab
 
 "treat .ino and .pde files as .cpp (for arduino and zapuino)
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
