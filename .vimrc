@@ -53,6 +53,9 @@ set autoindent
 
 set expandtab "Insert spaces, not a tabstop when I hit the tab key
 
+" insert a literal tab character with Shift+Tab
+inoremap <S-Tab> <C-V><Tab>
+
 " list trailing whitespace
 set listchars=tab:>-,trail:.,extends:>,precedes:<
 set list
