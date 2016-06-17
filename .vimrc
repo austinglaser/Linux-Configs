@@ -88,7 +88,7 @@ autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_us
 
-"Set all tabs to be 2 wide
+"Set all tabs to be 4 wide
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
