@@ -76,6 +76,9 @@ autocmd FileType make setlocal expandtab
 "treat .ino and .pde files as .cpp (for arduino and zapuino)
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
 
+"treat gmsl as makefiles (cause they are)
+autocmd BufNewFile,BufReadPost gmsl,__gmsl set filetype=make
+
 " Auto line wrapping
 autocmd BufRead,BufNewFile *.txt setlocal wm=2 tw=80
 autocmd BufRead,BufNewFile *.tex setlocal wm=2 tw=80
