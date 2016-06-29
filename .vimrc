@@ -16,6 +16,7 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'aperezdc/vim-template'
 Plugin 'godlygeek/tabular'
 Plugin 'git@github.com:plasticboy/vim-markdown.git'
+Plugin 'git@github.com:altercation/vim-colors-solarized.git'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -98,10 +99,13 @@ set shiftwidth=4
 
 "show whitespace
 
-syntax on "Turn on syntax highlighting
+syntax enable "Turn on syntax highlighting
 
 "Colorscheme
-colorscheme koehler
+let g:solarized_termtrans=1
+let g:solarized_visibility="normal"
+set background=dark
+colorscheme solarized
 
 "save temp files in tmp!
 set backupdir=/tmp/
