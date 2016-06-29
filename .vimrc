@@ -124,6 +124,7 @@ autocmd BufRead,BufNewFile *.markdown setlocal wm=2 tw=80
 
 "Wrap comments, and keep a comment open within insert mode (:help fo-table)
 set fo+=cra
+set fo-=t
 autocmd BufRead,BufNewFile *.c setlocal fo+=o
 autocmd BufRead,BufNewFile *.h setlocal fo+=o
 
