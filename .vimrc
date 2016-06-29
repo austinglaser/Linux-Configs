@@ -125,8 +125,9 @@ let g:templates_directory = '~/.vim/templates'
 
 "Wrap comments, and keep a comment open within insert mode
 " :help fo-table
-autocmd BufRead,BufNewFile * setlocal fo+=tcr
-autocmd BufRead,BufNewFile * setlocal fo-=o
+set fo+=cra
+autocmd BufRead,BufNewFile *.c setlocal fo+=o
+autocmd BufRead,BufNewFile *.h setlocal fo+=o
 
 " --- COMMANDS --------------------------------------------------------------- "
 
