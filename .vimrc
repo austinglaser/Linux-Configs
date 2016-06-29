@@ -1,4 +1,4 @@
-" --- PLUGINS ---------------------------------------------------------------- "
+" --- PLUGINS -------------------------------------------------------------- "
 
 " Vundle (plugin manager) stuff
 set nocompatible
@@ -49,10 +49,17 @@ filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"ConqueGdb options
+let g:ConqueGdb_SrcSplit = 'left'
+"let g:ConqueGdb_Leader = ';'
 
-set number "Show line numbers all the time
+"vim-template options
+let g:username = 'Austin Glaser'
+let g:email = 'austin@boulderes.com'
+let g:templates_no_builtin_templates = 1
+let g:templates_directory = '~/.vim/templates'
 
-" --- INDENTATION ------------------------------------------------------------ "
+" --- INDENTATION ---------------------------------------------------------- "
 
 set cindent "Auto indent for me when I open .c files.
 set smartindent
@@ -79,7 +86,7 @@ set cinoptions=:0
 hi NonText ctermfg=8 guifg=gray
 hi SpecialKey ctermfg=8 guifg=gray
 
-" --- FILETYPES -------------------------------------------------------------- "
+" --- FILETYPES ------------------------------------------------------------ "
 
 "treat .ino and .pde files as .cpp (for arduino and zapuino)
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
@@ -87,19 +94,13 @@ autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
 "treat gmsl as makefiles (cause they are)
 autocmd BufNewFile,BufReadPost gmsl,__gmsl set filetype=make
 
-" Auto line wrapping
-autocmd BufRead,BufNewFile *.txt setlocal wm=2 tw=80
-autocmd BufRead,BufNewFile *.tex setlocal wm=2 tw=80
-autocmd BufRead,BufNewFile *.md setlocal wm=2 tw=80
-autocmd BufRead,BufNewFile *.markdown setlocal wm=2 tw=80
-
 " Spell Check
 autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_us
 
-" --- COLOR ------------------------------------------------------------------ "
+" --- APPEARANCE ----------------------------------------------------------- "
 
 syntax enable "Turn on syntax highlighting
 
@@ -109,27 +110,24 @@ let g:solarized_visibility="normal"
 set background=dark
 colorscheme solarized
 
+set number "Show line numbers all the time
+
 "save temp files in tmp!
 set backupdir=/tmp/
 set directory=/tmp/
 
-"ConqueGdb options
-let g:ConqueGdb_SrcSplit = 'left'
-"let g:ConqueGdb_Leader = ';'
+" Auto line wrapping
+autocmd BufRead,BufNewFile *.txt setlocal wm=2 tw=80
+autocmd BufRead,BufNewFile *.tex setlocal wm=2 tw=80
+autocmd BufRead,BufNewFile *.md setlocal wm=2 tw=80
+autocmd BufRead,BufNewFile *.markdown setlocal wm=2 tw=80
 
-"vim-template options
-let g:username = 'Austin Glaser'
-let g:email = 'austin@boulderes.com'
-let g:templates_no_builtin_templates = 1
-let g:templates_directory = '~/.vim/templates'
-
-"Wrap comments, and keep a comment open within insert mode
-" :help fo-table
+"Wrap comments, and keep a comment open within insert mode (:help fo-table)
 set fo+=cra
 autocmd BufRead,BufNewFile *.c setlocal fo+=o
 autocmd BufRead,BufNewFile *.h setlocal fo+=o
 
-" --- COMMANDS --------------------------------------------------------------- "
+" --- COMMANDS ------------------------------------------------------------- "
 
 command WrapToggle call WrapToggle()
 function! WrapToggle()
