@@ -1,3 +1,5 @@
+" --- PLUGINS ---------------------------------------------------------------- "
+
 " Vundle (plugin manager) stuff
 set nocompatible
 filetype off
@@ -46,13 +48,22 @@ filetype plugin indent on
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+
 set number "Show line numbers all the time
+
+" --- INDENTATION ------------------------------------------------------------ "
 
 set cindent "Auto indent for me when I open .c files.
 set smartindent
 set autoindent
 
 set expandtab "Insert spaces, not a tabstop when I hit the tab key
+
+"Set all tabs to be 4 wide
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 " insert a literal tab character with Shift+Tab
 inoremap <S-Tab> <C-V><Tab>
@@ -68,11 +79,7 @@ set cinoptions=:0
 hi NonText ctermfg=8 guifg=gray
 hi SpecialKey ctermfg=8 guifg=gray
 
-"turn off expand tab for makefiles
-"This is because makefiles are 'whitespace'
-"sensitive and expect a tabstop, not a certain
-"number of spaces
-autocmd FileType make setlocal expandtab
+" --- FILETYPES -------------------------------------------------------------- "
 
 "treat .ino and .pde files as .cpp (for arduino and zapuino)
 autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
@@ -92,12 +99,7 @@ autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.markdown setlocal spell spelllang=en_us
 
-"Set all tabs to be 4 wide
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-
-"show whitespace
+" --- COLOR ------------------------------------------------------------------ "
 
 syntax enable "Turn on syntax highlighting
 
@@ -125,6 +127,8 @@ let g:templates_directory = '~/.vim/templates'
 " :help fo-table
 autocmd BufRead,BufNewFile * setlocal fo+=tcr
 autocmd BufRead,BufNewFile * setlocal fo-=o
+
+" --- COMMANDS --------------------------------------------------------------- "
 
 command WrapToggle call WrapToggle()
 function! WrapToggle()
