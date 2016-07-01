@@ -127,6 +127,18 @@ bindsym Mod1+8 workspace $w8
 bindsym Mod1+9 workspace $w9
 bindsym Mod1+0 workspace $w10
 
+# switch to workspace, bring to monitor
+bindsym Mod1+Ctrl+1 exec --no-startup-id ~/.i3/switch-workspace.py $w1
+bindsym Mod1+Ctrl+2 exec --no-startup-id ~/.i3/switch-workspace.py $w2
+bindsym Mod1+Ctrl+3 exec --no-startup-id ~/.i3/switch-workspace.py $w3
+bindsym Mod1+Ctrl+4 exec --no-startup-id ~/.i3/switch-workspace.py $w4
+bindsym Mod1+Ctrl+5 exec --no-startup-id ~/.i3/switch-workspace.py $w5
+bindsym Mod1+Ctrl+6 exec --no-startup-id ~/.i3/switch-workspace.py $w6
+bindsym Mod1+Ctrl+7 exec --no-startup-id ~/.i3/switch-workspace.py $w7
+bindsym Mod1+Ctrl+8 exec --no-startup-id ~/.i3/switch-workspace.py $w8
+bindsym Mod1+Ctrl+9 exec --no-startup-id ~/.i3/switch-workspace.py $w9
+bindsym Mod1+Ctrl+0 exec --no-startup-id ~/.i3/switch-workspace.py $w10
+
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace $w1
 bindsym Mod1+Shift+2 move container to workspace $w2
