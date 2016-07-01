@@ -134,6 +134,3 @@ export GCC_COLORS='always'
 # Allow, among other things, core dumps of unlimited size
 ulimit -c unlimited
 
-export PATH="$PATH:"/opt/microchip/xc32/v1.34/bin""
-
-export PATH="$PATH:"/opt/microchip/xc8/v1.34/bin""

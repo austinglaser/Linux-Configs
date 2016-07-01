@@ -20,9 +20,3 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
-export PATH=$PATH:"/opt/microchip/xc16/v1.24/bin"
-
-export PATH="$PATH:"/opt/microchip/xc32/v1.34/bin""
-
-export PATH="$PATH:"/opt/microchip/xc8/v1.34/bin""
