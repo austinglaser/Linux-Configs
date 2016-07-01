@@ -159,6 +159,12 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+# Control audio volume
+set $sink `pactl list short sinks | grep 'RUNNING\|IDLE' | cut -f1`
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +5% && pactl set-sink-mute $sink 0
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -5% && pactl set-sink-mute $sink 0
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute   $sink toggle
+
 bindsym Mod1+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
