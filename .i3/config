@@ -108,7 +108,7 @@ bindsym Mod1+minus scratchpad show
 bindsym Mod1+1 workspace 1
 bindsym Mod1+2 workspace 2
 bindsym Mod1+3 workspace 3
-bindsym Mod1+4 workspace 4
+bindsym Mod1+4 workspace "4:org"
 bindsym Mod1+5 workspace 5
 bindsym Mod1+6 workspace 6
 bindsym Mod1+7 workspace 7
