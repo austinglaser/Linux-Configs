@@ -19,7 +19,7 @@ font pango:monospace 8
 
 # X settings
 exec --no-startup-id xsetroot -solid "#333333"
-exec --no-startup-id xset r rate 150 40
+exec --no-startup-id xset r rate 200 40
 
 
 # Before i3 v4.8, we used to recommend this one as the default:
