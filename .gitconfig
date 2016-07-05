@@ -1,0 +1,10 @@
+[alias]
+	stat = status
+	permission-reset = ! git diff -p -R --no-color | grep -E '^(diff|(old|new) mode)' --color=never | git apply 2> /dev/null || (( echo 'No permission changes' && exit 1 ))
+[user]
+	name = Austin Glaser
+	email = austin@boulderes.com
+[push]
+	default = simple
+[core]
+	longpaths = true
