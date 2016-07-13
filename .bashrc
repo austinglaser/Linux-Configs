@@ -134,3 +134,5 @@ export GCC_COLORS='always'
 # Allow, among other things, core dumps of unlimited size
 ulimit -c unlimited
 
+# Turn off capslock
+setxkbmap -option ctrl:nocaps
