@@ -188,10 +188,9 @@ mode "resize" {
 }
 
 # Control audio volume
-set $sink `pactl list short sinks | grep 'RUNNING\|IDLE' | cut -f1`
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink +5% && pactl set-sink-mute $sink 0
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink -5% && pactl set-sink-mute $sink 0
-bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute   $sink toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.i3/vol-up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.i3/vol-down
+bindsym XF86AudioMute        exec --no-startup-id ~/.i3/vol-mute
 
 bindsym Mod1+r mode "resize"
 
