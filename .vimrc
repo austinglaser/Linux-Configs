@@ -89,10 +89,16 @@ hi SpecialKey ctermfg=8 guifg=gray
 " --- FILETYPES ------------------------------------------------------------ "
 
 "treat .ino and .pde files as .cpp (for arduino and zapuino)
-autocmd BufNewFile,BufReadPost *.ino,*.pde set filetype=cpp
+autocmd BufNewFile,BufReadPost *.ino,*.pde setlocal filetype=cpp
 
 "treat gmsl as makefiles (cause they are)
-autocmd BufNewFile,BufReadPost gmsl,__gmsl set filetype=make
+autocmd BufNewFile,BufReadPost gmsl,__gmsl setlocal filetype=make
+
+"treat gmsl as makefiles (cause they are)
+autocmd BufNewFile,BufReadPost Makefile,*.mk setlocal tabstop=4
+autocmd BufNewFile,BufReadPost Makefile,*.mk setlocal softtabstop=4
+autocmd BufNewFile,BufReadPost Makefile,*.mk setlocal shiftwidth=4
+autocmd BufNewFile,BufReadPost Makefile,*.mk setlocal expandtab
 
 " Spell Check
 autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us
