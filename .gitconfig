@@ -8,3 +8,5 @@
 	default = simple
 [core]
 	longpaths = true
+[merge]
+	tool = vimdiff
