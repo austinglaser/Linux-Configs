@@ -58,6 +58,8 @@ let g:username = 'Austin Glaser'
 let g:email = 'austin@boulderes.com'
 let g:templates_no_builtin_templates = 1
 let g:templates_directory = '~/.vim/templates'
+let g:templates_global_name_prefix = 'vim-template:'
+let g:templates_fuzzy_start = 0
 
 " --- INDENTATION ---------------------------------------------------------- "
 

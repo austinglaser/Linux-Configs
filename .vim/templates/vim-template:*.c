@@ -4,6 +4,9 @@
  *
  * @addtogroup %MACROCLASS%
  * @{
+ *
+ * @defgroup %MACROCLASS%_PRIVATE %CAMELCLASS% Private Members
+ * @{
  */
 
 /* --- PRIVATE DEPENDENCIES ------------------------------------------------- */
@@ -23,4 +26,5 @@
 /* --- PUBLIC FUNCTIONS ----------------------------------------------------- */
 /* --- PRIVATE FUNCTION DEFINITIONS ----------------------------------------- */
 
+/** @} defgroup %MACROCLASS%_PRIVATE */
 /** @} addtogroup %MACROCLASS% */
