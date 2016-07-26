@@ -65,6 +65,29 @@ let g:templates_no_builtin_templates = 1
 let g:templates_directory = '~/.vim/templates'
 let g:templates_global_name_prefix = 'vim-template:'
 let g:templates_fuzzy_start = 0
+let g:templates_user_variables = [
+    \   ['CLASSUNDERTEST',      'ClassUnderTest'],
+    \   ['MACROCLASSUNDERTEST', 'MacroClassUnderTest'],
+    \   ['CAMELCLASSUNDERTEST', 'CamelClassUnderTest'],
+    \ ]
+
+function! FileBaseName()
+    return expand('%:t:r')
+endfunction
+
+function! ClassUnderTest()
+    return substitute(FileBaseName(),'^test_','','')
+endfunction
+
+function! CamelClassUnderTest()
+    return substitute(substitute(ClassUnderTest(),
+                                 \ '\([a-zA-Z]\+\)', '\u\1', 'g'),
+                      \ '_', '', 'g')
+endfunction
+
+function! MacroClassUnderTest()
+    return toupper(ClassUnderTest())
+endfunction
 
 " --- INDENTATION ---------------------------------------------------------- "
 

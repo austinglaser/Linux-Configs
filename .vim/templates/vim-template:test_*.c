@@ -1,17 +1,18 @@
 /**@file    %FFILE%
  * @author  %USER% <%MAIL%>
- * @brief   %CAMELCLASS% Source
+ * @brief   %CAMELCLASSUNDERTEST% Test Source
  *
- * @addtogroup %MACROCLASS%
+ * @addtogroup %MACROCLASSUNDERTEST%
  * @{
  *
- * @defgroup %MACROCLASS%_TEST %CAMELCLASS% Tests
+ * @defgroup %MACROCLASSUNDERTEST%_TEST %CAMELCLASS% Tests
  * @{
  */
 
 /* --- PRIVATE DEPENDENCIES ------------------------------------------------- */
 
-#include "%FILE%.h"
+#include "unity.h"
+#include "%CLASSUNDERTEST%.h"
 
 #include <stdbool.h>
 #include <stddef.h>
@@ -24,7 +25,8 @@
 /* --- PUBLIC VARIABLES ----------------------------------------------------- */
 /* --- PRIVATE VARIABLES ---------------------------------------------------- */
 /* --- PUBLIC FUNCTIONS ----------------------------------------------------- */
+/* --- PUBLIC TESTS --------------------------------------------------------- */
 /* --- PRIVATE FUNCTION DEFINITIONS ----------------------------------------- */
 
-/** @} addtogroup %MACROCLASS%_TEST */
-/** @} addtogroup %MACROCLASS% */
+/** @} defgroup %MACROCLASSUNDERTEST%_TEST */
+/** @} addtogroup %MACROCLASSUNDERTEST% */
