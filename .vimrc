@@ -1,3 +1,8 @@
+" --- LEADER  -------------------------------------------------------------- "
+
+let mapleader = "\<Space>"
+let maplocalleader = "\<Space>"
+
 " --- PLUGINS -------------------------------------------------------------- "
 
 " Vundle (plugin manager) stuff
