@@ -93,6 +93,12 @@ set cinoptions=:0
 hi NonText ctermfg=8 guifg=gray
 hi SpecialKey ctermfg=8 guifg=gray
 
+" --- CUSTOM MAPPINGS ------------------------------------------------------ "
+
+" <c-u> makes the current word uppercase in insert and normal modes
+inoremap <c-u> <esc>viwUi
+nnoremap <c-u> viwU
+
 " --- FILETYPES ------------------------------------------------------------ "
 
 "treat .ino and .pde files as .cpp (for arduino and zapuino)
