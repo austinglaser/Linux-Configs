@@ -5,7 +5,7 @@
  * @addtogroup %MACROCLASSUNDERTEST%
  * @{
  *
- * @defgroup %MACROCLASSUNDERTEST%_TEST %CAMELCLASS% Tests
+ * @defgroup %MACROCLASSUNDERTEST%_TEST %CAMELCLASSUNDERTEST% Tests
  * @{
  */
 
