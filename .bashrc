@@ -135,4 +135,4 @@ export GCC_COLORS='always'
 ulimit -c unlimited
 
 # Turn off capslock
-setxkbmap -option ctrl:nocaps
+#setxkbmap -option ctrl:nocaps
